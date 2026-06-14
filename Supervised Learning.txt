@@ -1,0 +1,247 @@
+# Supervised Learning
+
+## Definition
+Supervised Learning is a type of Machine Learning where the model learns from **labeled data**.
+
+- Input (Features) → X
+- Correct Output (Label/Target) → y
+
+The model learns the relationship between X and y and predicts outputs for new unseen data.
+
+### Example
+
+| House Size | Price |
+|------------|--------|
+| 1000 sq ft | ₹50 lakh |
+| 1500 sq ft | ₹75 lakh |
+| 2000 sq ft | ₹1 crore |
+
+The model learns:
+
+House Size → Price
+
+---
+
+# Types of Supervised Learning
+
+## 1. Regression
+
+Predicts a **continuous numerical value**.
+
+### Examples
+- House price prediction
+- Temperature prediction
+- Stock price prediction
+
+### Output Examples
+- 25.4
+- 75.6
+- 102.8
+
+### Common Algorithms
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+---
+
+## 2. Classification
+
+Predicts a **category/class**.
+
+### Examples
+- Spam or Not Spam
+- Disease or No Disease
+- Cat or Dog
+
+### Output Examples
+- Yes / No
+- Spam / Not Spam
+- 0 / 1
+
+### Common Algorithms
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+
+---
+
+# Important Terminology
+
+## Features (X)
+
+Input variables used for prediction.
+
+### Examples
+- Age
+- Income
+- Study Hours
+
+---
+
+## Target Variable (y)
+
+What we want to predict.
+
+### Examples
+- Exam Score
+- House Price
+- Spam/Not Spam
+
+---
+
+## Training Data
+
+Data used to teach the model.
+
+Typically:
+- 80% Training
+- 20% Testing
+
+---
+
+## Testing Data
+
+Data the model has never seen before.
+
+Used to evaluate performance.
+
+---
+
+# Workflow of Supervised Learning
+
+Collect Data
+↓
+Clean Data
+↓
+Feature Selection
+↓
+Train Model
+↓
+Evaluate Model
+↓
+Predict New Data
+
+---
+
+# Model Evaluation Metrics
+
+## For Regression
+
+### MAE (Mean Absolute Error)
+
+Average absolute difference between prediction and actual value.
+
+Lower = Better
+
+---
+
+### MSE (Mean Squared Error)
+
+Squares errors before averaging.
+
+Punishes large mistakes more.
+
+---
+
+### RMSE (Root Mean Squared Error)
+
+Same unit as original data.
+
+Very commonly used.
+
+---
+
+### R² Score
+
+Measures how well the model explains the data.
+
+Range:
+- 0 → Poor
+- 1 → Perfect
+
+---
+
+## For Classification
+
+### Accuracy
+
+Accuracy = Correct Predictions / Total Predictions
+
+---
+
+### Precision
+
+Out of predicted positives, how many were actually positive?
+
+Useful for spam detection.
+
+---
+
+### Recall
+
+Out of actual positives, how many did we correctly identify?
+
+Useful in disease detection.
+
+---
+
+### F1 Score
+
+Balance between Precision and Recall.
+
+---
+
+# Common Real-World Examples
+
+| Problem | Type |
+|----------|----------|
+| House Price Prediction | Regression |
+| Netflix Recommendation | Classification/Ranking |
+| Email Spam Detection | Classification |
+| Student Marks Prediction | Regression |
+| Loan Approval | Classification |
+| Weather Forecasting | Regression |
+
+---
+
+# Advantages
+
+✅ Easy to understand
+
+✅ High accuracy when labeled data is available
+
+✅ Many mature algorithms available
+
+✅ Works well for prediction tasks
+
+---
+
+# Disadvantages
+
+❌ Requires labeled data
+
+❌ Labeling can be expensive
+
+❌ Can overfit if not handled properly
+
+❌ Performance depends heavily on data quality
+
+---
+
+# Interview One-Liner
+
+"Supervised Learning is a machine learning approach where a model learns from labeled examples and predicts outputs for unseen data. It mainly includes Regression for numerical prediction and Classification for category prediction."
+
+---
+
+# Recommended Learning Order
+
+1. Linear Regression
+2. Logistic Regression
+3. KNN
+4. Decision Trees
+5. Random Forest
+6. Gradient Boosting (XGBoost/LightGBM)

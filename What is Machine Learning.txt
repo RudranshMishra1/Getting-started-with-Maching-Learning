@@ -1,0 +1,13 @@
+Machine Learning:
+    -Field of study that gives computers the ability to learn without being explicity programmed.
+    -Arthur Samuel (1959)
+
+Machine Learning Algorithms:
+    -Supervised Learning
+        1. used mostly in real world applications
+        2. rapid advancements
+    -Unsupervised Learning
+    -Recommneder Systems
+    -Reinforcement Learning
+    -Most used Learning Algorithms in today's world is (Supervised Learning, Unsupervised Learning, Recommneder Systems)
+    
