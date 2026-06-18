@@ -1,0 +1,230 @@
+# UNSUPERVISED LEARNING NOTES
+
+## 1. What is Unsupervised Learning?
+
+Unsupervised Learning is a type of Machine Learning in which the model is trained on unlabeled data. The algorithm tries to find hidden patterns, structures, or relationships in the data without being given the correct output.
+
+Key Points:
+- Uses unlabeled data.
+- No target variable is provided.
+- Finds patterns automatically.
+- Useful for data exploration and pattern discovery.
+
+Example:
+Suppose we have customer data containing age and income. The algorithm can group similar customers together without knowing any predefined categories.
+
+--------------------------------------------------
+
+## 2. Characteristics of Unsupervised Learning
+
+- Works with unlabeled datasets.
+- Discovers hidden structures in data.
+- Requires less human supervision.
+- Useful for exploratory data analysis.
+- Can identify anomalies and patterns.
+
+--------------------------------------------------
+
+## 3. Types of Unsupervised Learning
+
+### A. Clustering
+
+Clustering is the process of grouping similar data points into clusters.
+
+Goal:
+- Data points in the same cluster should be similar.
+- Data points in different clusters should be different.
+
+Applications:
+- Customer segmentation
+- Image segmentation
+- Document classification
+- Social network analysis
+
+Examples of Clustering Algorithms:
+1. K-Means Clustering
+2. Hierarchical Clustering
+3. DBSCAN
+
+--------------------------------------------------
+
+### B. Association Rule Learning
+
+Association Rule Learning discovers relationships between variables in large datasets.
+
+Example:
+Customers who buy Bread and Butter often buy Milk.
+
+Rule:
+Bread → Milk
+
+Applications:
+- Market basket analysis
+- Product recommendation systems
+- Sales analysis
+
+Algorithms:
+1. Apriori Algorithm
+2. FP-Growth Algorithm
+
+--------------------------------------------------
+
+### C. Dimensionality Reduction
+
+Dimensionality Reduction reduces the number of features while retaining important information.
+
+Benefits:
+- Faster computation
+- Less storage required
+- Better visualization
+- Reduced overfitting
+
+Techniques:
+1. Principal Component Analysis (PCA)
+2. t-SNE
+3. UMAP
+
+--------------------------------------------------
+
+## 4. K-Means Clustering
+
+K-Means is one of the most popular clustering algorithms.
+
+Working Steps:
+
+Step 1:
+Choose the number of clusters (K).
+
+Step 2:
+Randomly initialize K centroids.
+
+Step 3:
+Assign each data point to the nearest centroid.
+
+Step 4:
+Calculate new centroids.
+
+Step 5:
+Repeat Steps 3 and 4 until centroids stop changing.
+
+Advantages:
+- Simple and fast
+- Easy to implement
+- Works well for large datasets
+
+Disadvantages:
+- Need to specify K beforehand
+- Sensitive to outliers
+- May converge to local optimum
+
+--------------------------------------------------
+
+## 5. Hierarchical Clustering
+
+Hierarchical Clustering creates a hierarchy of clusters.
+
+Types:
+1. Agglomerative (Bottom-Up)
+2. Divisive (Top-Down)
+
+Agglomerative Process:
+- Start with each point as a separate cluster.
+- Merge the closest clusters repeatedly.
+- Continue until one cluster remains.
+
+Advantages:
+- No need to specify K initially.
+- Produces a dendrogram.
+
+Disadvantages:
+- Computationally expensive.
+- Slow for large datasets.
+
+--------------------------------------------------
+
+## 6. Principal Component Analysis (PCA)
+
+PCA is a dimensionality reduction technique.
+
+Purpose:
+- Reduce features.
+- Preserve maximum variance.
+
+Steps:
+1. Standardize the data.
+2. Compute covariance matrix.
+3. Calculate eigenvalues and eigenvectors.
+4. Select principal components.
+5. Transform data into a lower-dimensional space.
+
+Applications:
+- Data visualization
+- Noise reduction
+- Feature extraction
+
+--------------------------------------------------
+
+## 7. Advantages of Unsupervised Learning
+
+- No labeled data required.
+- Finds hidden patterns automatically.
+- Useful for large datasets.
+- Helps in feature discovery.
+- Can detect anomalies.
+
+--------------------------------------------------
+
+## 8. Disadvantages of Unsupervised Learning
+
+- Results can be difficult to interpret.
+- No direct accuracy measurement.
+- Sensitive to data quality.
+- May discover irrelevant patterns.
+
+--------------------------------------------------
+
+## 9. Applications of Unsupervised Learning
+
+1. Customer Segmentation
+2. Recommendation Systems
+3. Fraud Detection
+4. Market Basket Analysis
+5. Image Compression
+6. Social Network Analysis
+7. Medical Diagnosis Support
+8. Anomaly Detection
+
+--------------------------------------------------
+
+## 10. Difference Between Supervised and Unsupervised Learning
+
+Supervised Learning:
+- Uses labeled data.
+- Has input and output.
+- Used for prediction.
+- Examples: Linear Regression, Logistic Regression, Decision Trees.
+
+Unsupervised Learning:
+- Uses unlabeled data.
+- No output labels.
+- Used for pattern discovery.
+- Examples: K-Means, PCA, Hierarchical Clustering.
+
+--------------------------------------------------
+
+## Interview Questions
+
+Q1. What is Unsupervised Learning?
+Ans: A machine learning approach that learns patterns from unlabeled data.
+
+Q2. Name three unsupervised learning algorithms.
+Ans: K-Means, Hierarchical Clustering, PCA.
+
+Q3. What is clustering?
+Ans: The process of grouping similar data points together.
+
+Q4. What is PCA used for?
+Ans: Dimensionality reduction and feature extraction.
+
+Q5. What is the difference between supervised and unsupervised learning?
+Ans: Supervised learning uses labeled data, while unsupervised learning uses unlabeled data.
