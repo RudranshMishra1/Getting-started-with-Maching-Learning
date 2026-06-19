@@ -1,0 +1,307 @@
+## What is Machine Learning?
+
+Machine Learning is a field of AI that enables computers to learn patterns from data and make predictions without being explicitly programmed for every task.
+
+### Examples
+
+* House Price Prediction
+* Spam Email Detection
+* Movie Recommendations
+* Student Score Prediction
+
+---
+
+# Types of Machine Learning
+
+## 1. Supervised Learning
+
+Training data contains:
+
+* Input (X)
+* Correct Output (Y)
+
+The model learns a mapping from X → Y.
+
+### Regression
+
+Predicts a continuous numerical value.
+
+Examples:
+
+* House Price
+* Temperature
+* Salary
+
+### Classification
+
+Predicts categories.
+
+Examples:
+
+* Spam / Not Spam
+* Pass / Fail
+* Cat / Dog
+
+---
+
+## 2. Unsupervised Learning
+
+Training data has no labels.
+
+Goal:
+
+* Discover patterns
+* Group similar data
+
+Examples:
+
+* Customer Segmentation
+* Clustering
+
+---
+
+# Linear Regression
+
+Linear Regression is used to predict continuous numerical values.
+
+### Example
+
+Predicting house prices based on house size.
+
+| House Size (sq ft) | Price   |
+| ------------------ | ------- |
+| 1000               | 20 Lakh |
+| 1500               | 30 Lakh |
+| 2000               | 40 Lakh |
+
+The algorithm learns a line that best fits the data.
+
+---
+
+# Terminology
+
+## Training Set
+
+The dataset used to train the model.
+
+Notation:
+
+X = Input Features
+
+Y = Target Values
+
+---
+
+## Feature
+
+A feature is an input variable used to make predictions.
+
+Examples:
+
+* House Size
+* Study Hours
+* Attendance
+
+Notation:
+
+X
+
+---
+
+## Target Variable
+
+The value the model tries to predict.
+
+Examples:
+
+* House Price
+* Exam Score
+
+Notation:
+
+Y
+
+---
+
+# Linear Regression Model
+
+Formula:
+
+f(x) = wx + b
+
+Where:
+
+x = Input Feature
+
+w = Weight (Slope)
+
+b = Bias (Intercept)
+
+---
+
+## Example
+
+f(x) = 2x + 5
+
+If:
+
+x = 10
+
+Then:
+
+f(x) = 25
+
+---
+
+# Model Parameters
+
+## Weight (w)
+
+Controls the slope of the line.
+
+* Higher w → Steeper Line
+* Lower w → Flatter Line
+
+---
+
+## Bias (b)
+
+Moves the line upward or downward.
+
+---
+
+# Prediction
+
+Prediction is represented as:
+
+ŷ = f(x)
+
+Pronounced:
+
+"y-hat"
+
+Example:
+
+Actual Score = 80
+
+Predicted Score = 75
+
+ŷ = 75
+
+---
+
+# Cost Function
+
+A cost function measures how wrong the model's predictions are.
+
+Goal:
+
+Minimize the Cost Function
+
+Smaller Cost = Better Predictions
+
+---
+
+# Squared Error Cost Function
+
+For one training example:
+
+(ŷ - y)²
+
+For multiple training examples:
+
+J(w,b) = (1 / 2m) Σ (ŷ - y)²
+
+Where:
+
+J = Cost Function
+
+m = Number of Training Examples
+
+ŷ = Predicted Value
+
+y = Actual Value
+
+---
+
+# Why Square the Error?
+
+Without squaring:
+
++10 and -10 errors can cancel each other.
+
+With squaring:
+
+100 and 100 remain positive.
+
+Benefits:
+
+* No cancellation of errors
+* Larger errors receive larger penalties
+
+---
+
+# Goal of Training
+
+Find values of:
+
+w
+
+b
+
+Such that:
+
+J(w,b)
+
+is as small as possible.
+
+---
+
+# Training Process
+
+Predict
+↓
+Calculate Error
+↓
+Calculate Cost
+↓
+Adjust Parameters (w, b)
+↓
+Reduce Cost
+↓
+Repeat
+
+---
+
+# Important Formulas
+
+## Linear Regression
+
+f(x) = wx + b
+
+---
+
+## Prediction
+
+ŷ = f(x)
+
+---
+
+## Cost Function
+
+J(w,b) = (1 / 2m) Σ (ŷ - y)²
+
+---
+
+# Quick Revision Questions
+
+1. What is Machine Learning?
+2. What is the difference between Regression and Classification?
+3. What is a Feature?
+4. What is a Target Variable?
+5. What does w represent?
+6. What does b represent?
+7. What is the purpose of the Cost Function?
+8. Why do we square the errors?
+9. What is ŷ (y-hat)?
+10. What is the main goal of training a model?
